@@ -69,6 +69,8 @@ Maximum Tokens to Return in Response:
   description: The maximum number of words or "tokens" that the AI model should generate.
 Safety settings:
   description: Thresholds for different [harmful categories](https://ai.google.dev/gemini-api/docs/safety-settings).
+Use Google Search Tool:
+  description: Enables the model to [query Google Search](https://ai.google.dev/gemini-api/docs/grounding?lang=python), this may cause the model to lookup on the web information you may want to retrieve from your home. If this happens you can try editing the Instructions to instruct it not to. 
 {% endconfiguration_basic %}
 
 ## Talking to Super Mario
