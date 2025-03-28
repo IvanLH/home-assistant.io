@@ -50,6 +50,8 @@ Instructions:
   description: Instructions for the AI on how it should respond to your requests. It is written using [Home Assistant Templating](/docs/configuration/templating/).
 Control Home Assistant:
   description: If the model is allowed to interact with Home Assistant. It can only control or provide information about entities that are [exposed](/voice_control/voice_remote_expose_devices/) to it.
+Enable Google Search Tool:
+  description: Enables the model to [query Google Search](https://ai.google.dev/gemini-api/docs/grounding), this can only be enabled when the AI is not allowed to interact with exposed entities.
 Recommended settings:
   description: If enabled, the recommended model and settings are chosen.
 {% endconfiguration_basic %}
