@@ -11,8 +11,9 @@ ha_codeowners:
   - '@home-assistant/core'
 ha_iot_class: Calculated
 ha_platforms:
+  - diagnostics
   - sensor
-ha_integration_type: system
+ha_integration_type: service
 related:
   - docs: /common-tasks/general/#backups
     title: Backups
@@ -56,8 +57,13 @@ action: backup.create_automatic
 
 The {% my developer_call_service service="backup.create" %} action can be used
 to create a backup of your Home Assistant instance.
-This action is only available in [core and container installations](/installation/#advanced-installation-methods).
-The action has no additional options or parameters.
+
+- This action is only available in [core and container installations](/installation/#advanced-installation-methods).
+- The action has no additional options or parameters.
+- The backup will only be saved on the local storage.
+- The backup created with `backup.create` always includes the database.
+- The backup will be created without a password.
+
 Example action:
 
 ```yaml

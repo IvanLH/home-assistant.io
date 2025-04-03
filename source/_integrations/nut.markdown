@@ -3,8 +3,8 @@ title: Network UPS Tools (NUT)
 description: Instructions on how to set up NUT sensors within Home Assistant.
 ha_category:
   - Button
-  - System monitor
   - Switch
+  - System monitor
 ha_iot_class: Local Polling
 ha_release: 0.34
 ha_domain: nut
@@ -81,9 +81,7 @@ available for your device.
 
 The following buttons are available for each switchable outlet:
 
-| name                      | Description                                     |
-|---------------------------|:------------------------------------------------|
-| Power cycle outlet `name` | Power cycle the named outlet                    |
+- **Power cycle outlet NAME**: Power cycle the named outlet
 
 ### Switches
 
@@ -92,9 +90,7 @@ available for your device.
 
 The following switches are available for each switchable outlet:
 
-| name                      | Description                                     |
-|---------------------------|:------------------------------------------------|
-| Power outlet `name`       | Turn power on/off for named outlet              |
+- **Power outlet NAME**: Turn power on/off for named outlet
 
 ## Data updates
 
